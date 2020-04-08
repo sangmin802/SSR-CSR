@@ -10,9 +10,9 @@
     + 클라이언트와 서버가 상호작용하는 기능은 사라짐.(해당 내용은 개선되었음)  
   * 배포과정  
     - 기존 MPA방식  
-1. bundling(webpack)을 통해 build된 static folder가 생성됨.  
-2. 배포를 하면, 서버에서 bundle된 js파일을 통해 View화면을 생성함.  
-3. 생성된 View를 브라우저에 던져줌.  
+      1. bundling(webpack)을 통해 build된 static folder가 생성됨.  
+      2. 배포를 하면, 서버에서 bundle된 js파일을 통해 View화면을 생성함.  
+      3. 생성된 View를 브라우저에 던져줌.  
     - SPA + SSR (서버와 클라이언트간 상호작용이 강점인 SPA 및, SEO개선을위한 SSR 병합)  
       4. 위의 3단계와 동일함.  
       5. 던져진 View화면의 bundle요청 script를 읽어옴.  
