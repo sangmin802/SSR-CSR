@@ -34,7 +34,6 @@
   * SSR !== MPA, CSR !== CPA 이다.  
   * CPA는 DOM의 일부분만 수정하며 View화면을 구성하는것이 목적이기에 CSR방식을 택한것이고, MPA는 정적인 화면 여러개를 미리 생성한 뒤 View화면을 구성하는것이 목적이기에 SSR방식을 택한것이다.  
   *  서버버전의 경우, 별도로 만든 Node.js서버에서, rendertostring을 통해, App내부의 모든 코드를 문자열로 바꿔서, root태그 안에 삽입한다.
-## SSR, 
 ### SSR화하기  
   1. 별도의 Node.js서버를 만들고, (서버버전)build된 index.html파일과, React의 시작이되는 App파일을 불러온다.  
   2. 서버에서, 불러온 index.html파일의 root부분 내부에, React의 메소드인 rendertostring(App)을 해줘서, App컴포넌트부터 최 하위 컴포넌트까지 모두 문자열로 바꿔 넣도록 한다.  
